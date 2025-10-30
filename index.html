@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contabilizador</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Contabilizador</h1>
+
+    <div class="paneles">
+      <!-- MONEDAS -->
+      <div class="panel">
+        <h2>Contador de Monedas</h2>
+        <div class="campo" data-valor="0.5"><label>$0.50</label><input type="number" min="0" value="0" /></div>
+        <div class="campo" data-valor="1"><label>$1.00</label><input type="number" min="0" value="0" /></div>
+        <div class="campo" data-valor="2"><label>$2.00</label><input type="number" min="0" value="0" /></div>
+        <div class="campo" data-valor="5"><label>$5.00</label><input type="number" min="0" value="0" /></div>
+        <div class="campo" data-valor="10"><label>$10.00</label><input type="number" min="0" value="0" /></div>
+        <div class="campo" data-valor="20"><label>$20.00</label><input type="number" min="0" value="0" /></div>
+        <p>Total Monedas: <span id="totalMonedas">$0.00</span></p>
+      </div>
+
+      <!-- BILLETES -->
+      <div class="panel">
+        <h2>Contador de Billetes</h2>
+        <div class="campo" data-valor="20"><label>$20</label><input type="number" min="0" value="0" /></div>
+        <div class="campo" data-valor="50"><label>$50</label><input type="number" min="0" value="0" /></div>
+        <div class="campo" data-valor="100"><label>$100</label><input type="number" min="0" value="0" /></div>
+        <div class="campo" data-valor="200"><label>$200</label><input type="number" min="0" value="0" /></div>
+        <div class="campo" data-valor="500"><label>$500</label><input type="number" min="0" value="0" /></div>
+        <div class="campo" data-valor="1000"><label>$1000</label><input type="number" min="0" value="0" /></div>
+        <p>Total Billetes: <span id="totalBilletes">$0.00</span></p>
+      </div>
+    </div>
+
+    <div class="acciones">
+      <button id="btnCalcular">🧮 Calcular total</button>
+      <button id="btnLimpiar">🧹 Limpiar todo</button>
+    </div>
+
+    <div class="total-final">
+      <h2>Total General: <span id="totalGeneral">$0.00</span></h2>
+    </div>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
