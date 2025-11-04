@@ -30,7 +30,7 @@ function calcularTotales() {
 
 function limpiarCampos() {
   document.querySelectorAll("input[type='number']").forEach(input => {
-    input.value = 0;
+    input.value = "";
   });
   calcularTotales();
 }
